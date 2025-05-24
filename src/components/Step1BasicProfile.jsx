@@ -29,13 +29,13 @@ function Step1({ onDataChange, formData, validate }) {
       validate(false)
     }
     if(formData.cusname === ""){
-      setErrorData("Bồ chưa nhập tên")
+      setErrorData("Bạn chưa nhập tên")
     }
     else if(formData.age === ""){
-      setErrorData("Bồ chưa nhập tuổi")
+      setErrorData("Bạn chưa nhập tuổi")
     }
     else if(phoneLength === 0){
-      setErrorData("Bồ chưa nhập số điện thoại")
+      setErrorData("Bạn chưa nhập số điện thoại")
     }
     else if(startWithZero !== "0"){
       setErrorData("Số điện thoại phải bắt đầu bằng 0")
@@ -47,16 +47,16 @@ function Step1({ onDataChange, formData, validate }) {
       setErrorData("Số điện thoại không bao gồm chữ")
     }
     else if(formData.email === ""){
-      setErrorData("Bồ chưa nhập Email")
+      setErrorData("Bạn chưa nhập Email")
     }
     else if(formData.job === ""){
-      setErrorData("Bồ chưa nhập Nghề nghiệp")
+      setErrorData("Bạn chưa nhập Nghề nghiệp")
     }
     else if(formData.location === ""){
-      setErrorData("Bồ chưa nhập địa chỉ")
+      setErrorData("Bạn chưa nhập địa chỉ")
     }
     else if(formData.lunchBudget === ""){
-      setErrorData("Bồ chưa nhập chi phí cho buổi trưa")
+      setErrorData("Bạn chưa nhập chi phí cho buổi trưa")
     }
     else {
       setErrorData("")
@@ -71,11 +71,11 @@ function Step1({ onDataChange, formData, validate }) {
    <>
     <div className="space-y-4">
       <h2 className="text-lg font-bold border-2 border-[#FF6600] p-5 rounded-md bg-[#FF6600] text-center text-while">
-        Basic Profile
+        Khảo sát ý kiến khách hàng
       </h2>
       <div>
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Bồ vui lòng cho tui biết tên nhé?
+          Bạn vui lòng cho biết tên nhé?
         </label>
         <input
           required
@@ -88,7 +88,7 @@ function Step1({ onDataChange, formData, validate }) {
       </div>
       <div>
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Bồ bao nhiêu tuổi?
+          Bạn bao nhiêu tuổi?
         </label>
         <div className="flex justify-start items-center gap-2">
           {['18 – 24', '25 – 34', '35 – 44', '45 +'].map((option) => (
@@ -111,7 +111,7 @@ function Step1({ onDataChange, formData, validate }) {
       <div>
      
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Số điện thoại của Bồ để tui chăm sóc tốt hơn
+          Số điện thoại của Bạn để chăm sóc tốt hơn
         </label>
         <input
           required
@@ -126,7 +126,7 @@ function Step1({ onDataChange, formData, validate }) {
       </div>
       <div>
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Cho tui email của Bồ nha
+          Cho email của Bạn nha
         </label>
         <input
           required
@@ -139,7 +139,7 @@ function Step1({ onDataChange, formData, validate }) {
       </div>
       <div>
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Nghề nghiệp của Bồ là gì?
+          Nghề nghiệp của Bạn là gì?
         </label>
         <input
           required
@@ -153,7 +153,7 @@ function Step1({ onDataChange, formData, validate }) {
 
       <div>
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Bồ sống ở khu vực nào? (Quận, thành phố)
+          Bạn sống ở khu vực nào? (Quận, thành phố)
         </label>
         <input
           required
@@ -167,7 +167,7 @@ function Step1({ onDataChange, formData, validate }) {
 
       <div>
         <label className="block text-md font-bold text-[#60230D] mb-3">
-          Bồ sẵn sàng chi bao nhiêu cho bữa trưa?
+          Bạn sẵn sàng chi bao nhiêu cho bữa trưa?
         </label>
         <input
           required
